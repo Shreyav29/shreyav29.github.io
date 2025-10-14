@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shreya Vontela | Data Scientist</title>
+
+  <style>
+    :root { --nav-h: 64px; --teal: #0d9488; --teal-dark:#0b8078; --ink:#1b1b1b; }
+
+    html { scroll-behavior: smooth; font-family: "Inter","Segoe UI",Helvetica,Arial,sans-serif; color: var(--ink); }
+    body { margin:0; background:#fff; }
+
+    /* NAV */
+    nav{
+      position:fixed; top:0; left:0; width:100%; height:var(--nav-h);
+      background:rgba(255,255,255,0.95); backdrop-filter: blur(8px);
+      box-shadow:0 2px 6px rgba(0,0,0,.05);
+      display:flex; justify-content:center; align-items:center; gap:1.6rem;
+      z-index:1000;
+    }
+    nav a{
+      text-decoration:none; color:var(--teal); font-weight:600; padding:.25rem 0;
+      transition:color .2s, border-color .2s;
+      border-bottom:2px solid transparent;
+    }
+    nav a:hover{ color:var(--teal-dark); }
+    nav a.active{
+      color:var(--teal-dark);
+      border-color:var(--teal-dark);
+    }
+
+    /* SECTIONS */
+    section{ padding:48px 12% 64px; }
+    .anchor-offset{ scroll-margin-top: calc(var(--nav-h) + 12px); }
+
+    /* HERO fills first screen only */
+    #home.hero{
+      height: calc(100vh - var(--nav-h));
+      padding:0;
+      display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+      background: linear-gradient(160deg, #d1fae5 0%, #a7f3d0 35%, #6ee7b7 100%);
+      color:#065f46;
+    }
+    .hero img{
+      width:210px; height:210px; object-fit:cover; border-radius:50%;
+      border:4px solid #fff; box-shadow:0 8px 24px rgba(0,0,0,.1); margin-bottom:1rem;
+    }
+    .hero h1{ font-size:2.4rem; line-height:1.15; margin:.2rem 0 .4rem; }
+    .hero h3{ font-weight:500; color:#065f46; margin:0 0 1.1rem; font-size:1.15rem; letter-spacing:.2px; }
+    .social a{ margin:0 .55rem; text-decoration:none; color:#064e3b; font-weight:650; }
+    .social a:hover{ text-decoration:underline; }
+
+    h2{ color:var(--teal); font-size:1.9rem; margin:0 0 1rem; letter-spacing:.2px; }
+
+    /* Cards */
+    .card{
+      background:#f9f9fb; padding:1rem 1.25rem; border-radius:12px;
+      box-shadow:0 2px 8px rgba(0,0,0,.05); margin-bottom:1rem;
+      transform: translateY(8px); opacity:0; /* start hidden for reveal */
+    }
+    .card.revealed{ transform: translateY(0); opacity:1; transition: all .45s ease; }
+
+    /* Section reveal */
+    .section-reveal{ opacity:0; transform: translateY(12px); }
+    .section-reveal.revealed{ opacity:1; transform:none; transition: all .5s ease; }
+
+    /* Contact + Resume */
+    #contact{ text-align:center; }
+    #resume a{ color:var(--teal); font-weight:650; text-decoration:none; }
+    #resume a:hover{ color:var(--teal-dark); text-decoration:underline; }
+
+    /* Responsive */
+    @media (max-width: 860px){
+      nav{ gap:1rem; }
+      .hero img{ width:176px; height:176px; }
+      .hero h1{ font-size:2.0rem; }
+      .hero h3{ font-size:1.05rem; }
+      section{ padding-left:8%; padding-right:8%; }
+    }
+    @media (max-width: 520px){
+      nav{ gap:.8rem; font-size:.95rem; }
+      .hero h1{ font-size:1.85rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav>
+    <a href="#home" id="link-home">Home</a>
+    <a href="#about" id="link-about">About</a>
+    <a href="#projects" id="link-projects">Projects</a>
+    <a href="#experience" id="link-experience">Experience</a>
+    <a href="#contact" id="link-contact">Contact</a>
+    <a href="#resume" id="link-resume">Resume</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <img src="assets/avatar.jpg" alt="Shreya Vontela"/>
+    <h1>Hi, I'm Shreya Vontela</h1>
+    <h3>Data Scientist | ML Modeling · GenAI · Agentic AI</h3>
+    <div class="social">
+      <a href="https://github.com/shreyav29" target="_blank">GitHub</a> •
+      <a href="https://www.linkedin.com/in/shreya-vontela/" target="_blank">LinkedIn</a> •
+      <a href="mailto:shreyavontelaberkeley@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="anchor-offset section-reveal">
+    <h2>About</h2>
+    <p>
+      I’m a Principal Data Scientist passionate about building intelligent systems —
+      from data pipelines to Generative AI and Agentic AI models in production. I love
+      blending deep technical work with clear business impact.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="anchor-offset section-reveal">
+    <h2>Projects</h2>
+    <div class="card"><strong>LLM Attribute Extraction (Capstone)</strong><br/>Qwen 0.5B + LoRA to extract structured fields from product ads.</div>
+    <div class="card"><strong>Agentic AI Travel Planner</strong><br/>Multi-tool agent that searches, scrapes, and compares travel data to optimize deals.</div>
+    <div class="card"><strong>Analytics Gallery</strong><br/>Tableau dashboards for growth and experimentation insights.</div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="anchor-offset section-reveal">
+    <h2>Experience</h2>
+    <div class="card"><strong>Principal Data Scientist — Capital One</strong><br/>
+      Led ML modeling and GenAI initiatives; partnered with product & engineering to deploy AI systems at scale.
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="anchor-offset section-reveal">
+    <h2>Contact</h2>
+    <p>Feel free to reach out for collaborations or AI discussions!</p>
+    <div class="social">
+      <a href="mailto:shreyavontelaberkeley@gmail.com">Email</a> |
+      <a href="https://linkedin.com/in/shreya-vontela" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/shreyav29" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="anchor-offset section-reveal">
+    <h2>Resume</h2>
+    <p><a href="assets/Shreya_Vontela_Resume.pdf" target="_blank">📄 View or Download Resume</a></p>
+  </section>
+
+  <!-- Tiny JS: reveal-on-scroll + active-nav -->
+  <script>
+    // Reveal sections/cards when entering viewport
+    const revealTargets = document.querySelectorAll('.section-reveal, .card');
+    const revObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('revealed'); }
+      });
+    }, { threshold: 0.15 });
+    revealTargets.forEach(el => revObs.observe(el));
+
+    // Active nav highlight based on section in view
+    const sections = document.querySelectorAll('section[id]');
+    const links = {
+      home: document.getElementById('link-home'),
+      about: document.getElementById('link-about'),
+      projects: document.getElementById('link-projects'),
+      experience: document.getElementById('link-experience'),
+      contact: document.getElementById('link-contact'),
+      resume: document.getElementById('link-resume'),
+    };
+    const navObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        const id = e.target.id;
+        if (e.isIntersecting) {
+          Object.values(links).forEach(l => l.classList.remove('active'));
+          if (links[id]) links[id].classList.add('active');
+        }
+      });
+    }, { rootMargin: "-40% 0px -55% 0px", threshold: 0.01 });
+    sections.forEach(s => navObs.observe(s));
+  </script>
+</body>
+</html>

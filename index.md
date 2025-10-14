@@ -1,22 +1,35 @@
 ---
-layout: single
-classes: wide
+layout: splash
 title: "Hi, I'm Shreya"
-subtitle: "Principal Data Scientist · ML Modeling · GenAI · Agentic AI"
+subtitle: "Principal Data Scientist | ML Modeling · GenAI · Agentic AI"
 author_profile: true
+header:
+  overlay_color: "#1b1b1b"
+  overlay_filter: "0.35"
+  overlay_image: "/assets/img/hero-bg.jpg"
+  actions:
+    - label: "View My Projects"
+      url: "/projects/"
 ---
 
-I build practical AI systems end-to-end — from data pipelines and ML modeling to **GenAI** and **Agentic AI** in production.
+I’m a Principal Data Scientist passionate about building **end-to-end AI systems** — from data pipelines and ML modeling to **Generative AI** and **Agentic AI** in production.
 
-## Featured Projects
+My work blends **technical depth** with business impact, and I love solving complex problems with clean, elegant solutions.
 
-- **LLM Attribute Extraction (Capstone)** — Qwen + LoRA for structured fields from product titles/descriptions.  
+---
+
+## 🚀 Featured Projects
+
+- 🧠 **LLM Attribute Extraction (Capstone)**  
+  Built a Qwen 0.5B + LoRA model to extract structured fields from noisy product ads.  
   *Stack:* PyTorch, Hydra, ONNX Runtime.  
-  🔗 Code: <https://github.com/shreyavontela/attribute-extraction>
+  🔗 [View on GitHub](#)
 
-- **Agentic Travel Planner** — multi-tool agent to search/scrape/compare and recommend best deals.  
-  *Stack:* Python, LangChain, LLM tools.  
-  🔗 Code: <https://github.com/shreyavontela/agent-travel>
+- 🤖 **Agentic AI Travel Planner**  
+  Multi-tool agent that searches, scrapes, and compares travel data to optimize deals.  
+  *Stack:* Python, LangChain, LLM Tools.  
+  🔗 [View on GitHub](#)
 
-- **Analytics Gallery** — growth/retention dashboards and experiment insights.  
-  🔗 Tableau Public: <https://public.tableau.com/app/profile/shreya.vontela>
+- 📊 **Analytics Gallery**  
+  Interactive Tableau dashboards for growth, retention, and A/B test insights.  
+  🔗 [View on Tableau](#)

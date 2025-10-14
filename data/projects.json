@@ -1,0 +1,48 @@
+{
+  "projects": [
+    {
+      "title": "LLM Attribute Extraction (Capstone)",
+      "description": "Built a LoRA-fine-tuned Qwen-0.5B model to extract structured product attributes from noisy ad text. Designed JSON schema validation, evaluation pipeline, and optimized inference with ONNX Runtime.",
+      "highlights": [
+        "Fine-tuned Qwen-0.5B using LoRA",
+        "Schema validation with Pydantic",
+        "Evaluation harness with precision/recall metrics",
+        "Optimized inference using ONNX Runtime"
+      ],
+      "tech": ["PyTorch", "LoRA", "Hydra", "Qwen", "ONNX Runtime"],
+      "link": "https://github.com/shreyav29/attribute-extraction"
+    },
+    {
+      "title": "Agentic AI Travel Planner",
+      "description": "Developed an autonomous multi-tool agent that retrieves, compares, and ranks travel options using LLM reasoning, LangChain, and n8n automation.",
+      "highlights": [
+        "Implemented multi-step tool orchestration",
+        "Dynamic itinerary generation via LLM planning",
+        "Price comparison scoring across APIs"
+      ],
+      "tech": ["LangChain", "Python", "n8n", "LLM Tools"],
+      "link": "https://github.com/shreyav29/agent-travel"
+    },
+    {
+      "title": "RAG for Feature Enrichment",
+      "description": "Designed a Retrieval-Augmented Generation system to infer rich features from offline RL trajectories given limited online observations.",
+      "highlights": [
+        "Built FAISS-based retrieval of state embeddings",
+        "Trained generative mapping model for feature recovery",
+        "Validated on HalfCheetah and TextWorld environments"
+      ],
+      "tech": ["FAISS", "Transformers", "PyTorch", "RL"],
+      "link": ""
+    },
+    {
+      "title": "Customer Sentiment Classifier (NLP)",
+      "description": "Fine-tuned BiLSTM sentiment classifier on IMDB dataset with text cleaning, tokenization, and error analysis.",
+      "highlights": [
+        "Achieved 90% accuracy on IMDB benchmark",
+        "Performed model calibration and error review"
+      ],
+      "tech": ["TensorFlow", "NLTK", "Pandas"],
+      "link": "https://github.com/shreyav29/sentiment-nlp"
+    }
+  ]
+}

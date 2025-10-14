@@ -1,6 +1,6 @@
 title: "Shreya Vontela"
 description: "Principal Data Scientist · ML Modeling · GenAI · Agentic AI"
-url: "https://shreyavontela.github.io"
+url: "https://shreyav29.github.io"
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 # Site-wide UI
@@ -33,13 +33,13 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-github"
-      url: "https://github.com/shreyavontela"
+      url: "https://github.com/shreyav29"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/shreyavontela/"
+      url: "https://www.linkedin.com/in/shreya-vontela/"
     - label: "Email"
       icon: "fas fa-envelope"
-      url: "mailto:shreya.vontela@gmail.com"
+      url: "shreyavontelaberkeley@gmail.com"
 
 # Collections (optional blog later)
 collections:

@@ -1,27 +1,22 @@
-# 👋 Hi, I'm Shreya Vontela
-**Principal Data Scientist | ML Modeling • GenAI • Agentic AI**
-
-Welcome to my portfolio!  
-I specialize in **building data-driven, intelligent systems** — from ML modeling to GenAI and Agentic AI implementations.
-
+---
+layout: single
+classes: wide
+title: "Hi, I'm Shreya"
+subtitle: "Principal Data Scientist · ML Modeling · GenAI · Agentic AI"
+author_profile: true
 ---
 
-## 🚀 Featured Projects
-### Regression 
-- [GeoSpatial Analysis and House Price Prediction model](https://github.com/Shreyav29/GeoSpatial-Analysis-for-Real-Estate-Investment#geospatial-analysis-and-house-price-prediction-model) 
-- [Hourly_Temperature_Prediction_for_next_N_Days](https://github.com/Shreyav29/Hourly_Temperature_Prediction_for_next_N_Days)
+I build practical AI systems end-to-end — from data pipelines and ML modeling to **GenAI** and **Agentic AI** in production.
 
-### Classification 
-- [Predicting Probability of Default using Lending Club Loan Data](https://github.com/Shreyav29/Probability-Of-Default-Model)
+## Featured Projects
 
-### Time Series 
-- [Trading_Strategy of Casiso Stocks_Using_Satellite_Imagery_Data](https://github.com/Shreyav29/Trading_Strategy_Using_Satellite_Imagery_Dataset)
-- [Predicting Bitcoin price movement using multivariate multi step time series model](https://github.com/Shreyav29/Bitcoin_Price_Prediction)
-- [Asset Allocation using Convex Portfolio Optimization](https://github.com/Shreyav29/Portfolio_Optimization)
-- [SPX_Futures_Roll_Strategy](https://github.com/Shreyav29/SPX_Futures_Roll_Strategy)
-- [ARIMA model to predict stock prices](https://github.com/Shreyav29/66DaysOfData_Shreya_Vontela/blob/main/Day_1_ARIMA_Model/Arima_stock_price_prediction.ipynb)
+- **LLM Attribute Extraction (Capstone)** — Qwen + LoRA for structured fields from product titles/descriptions.  
+  *Stack:* PyTorch, Hydra, ONNX Runtime.  
+  🔗 Code: <https://github.com/shreyavontela/attribute-extraction>
 
----
+- **Agentic Travel Planner** — multi-tool agent to search/scrape/compare and recommend best deals.  
+  *Stack:* Python, LangChain, LLM tools.  
+  🔗 Code: <https://github.com/shreyavontela/agent-travel>
 
-## 📫 Connect
-[LinkedIn](https://www.linkedin.com/in/shreyavontela/) | [GitHub](https://github.com/shreyavontela)
+- **Analytics Gallery** — growth/retention dashboards and experiment insights.  
+  🔗 Tableau Public: <https://public.tableau.com/app/profile/shreya.vontela>

@@ -6,7 +6,7 @@ author_profile: true
 header:
   overlay_color: "#1b1b1b"
   overlay_filter: "0.35"
-  overlay_image: "/assets/img/hero-bg.jpg"
+  overlay_image: "/assets/hero-bg.jpg"
   actions:
     - label: "View My Projects"
       url: "/projects/"

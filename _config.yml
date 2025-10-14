@@ -27,7 +27,7 @@ navigation:
 # Author card (shows on About and optionally homepage)
 author:
   name: "Shreya Vontela"
-  avatar: "/assets/img/avatar.png"   # add this image
+  avatar: "/assets/avatar.png"   # add this image
   bio: "Principal Data Scientist building ML, GenAI & Agentic AI systems"
   location: "Seattle, WA"
   links:

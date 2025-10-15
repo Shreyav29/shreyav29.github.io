@@ -282,3 +282,81 @@ footer {
   text-indent: -0.6em;          /* nudge bullet text back slightly */
   padding-left: 0.6em;          /* keeps bullets vertically aligned with company text */
 }
+
+
+/* ---------- Projects grid (3-up cards) ---------- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.p-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  padding: 16px;
+  transition: transform .18s ease, box-shadow .18s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 190px;
+}
+
+.p-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+
+.p-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.p-card h3 {
+  margin: 2px 0 0;
+  font-size: 1.05rem;
+  color: var(--teal-dark);
+}
+
+.p-card .p-sub {
+  margin: 0;
+  color: #475569;
+  font-size: .95rem;
+  line-height: 1.35;
+}
+
+.tech-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.tech-badge {
+  font-size: .78rem;
+  padding: 4px 8px;
+  background: #eefcf9;
+  border: 1px solid #c8f5ec;
+  color: var(--teal-dark);
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.p-links {
+  margin-top: auto;              /* push links to bottom for equal-height cards */
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 1100px) {
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 680px) {
+  .projects-grid { grid-template-columns: 1fr; }
+}

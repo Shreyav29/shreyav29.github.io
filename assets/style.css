@@ -220,16 +220,6 @@ footer {
   padding:0;                           /* no padding on UL */
 }
 
-.timeline-side::before{                /* vertical spine */
-  content:"";
-  position:absolute;
-  left:140px;                          /* sits in the gutter */
-  top:0; bottom:0;
-  width:3px;
-  background:linear-gradient(180deg,#b2f5ea,var(--teal));
-  opacity:.5; border-radius:2px;
-}
-
 .timeline-side li{
   position:relative;
   padding-left:180px;                  /* create the gutter per item */

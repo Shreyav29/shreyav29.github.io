@@ -14,7 +14,7 @@
       "link": "https://github.com/Shreyav29/Probability-Of-Default-Model"
     },
     {
-      "title": "Trading_Strategy_Using_Satellite_Imagery_Data",
+      "title": "Trading Strategy Using Satellite Imagery Data",
       "summary": "Is it possible to use Satellite Imagery data to predict the stock price movement of a casino industry stock ?",
       "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/Shreyav29/Trading_Strategy_Using_Satellite_Imagery_Dataset"
@@ -32,10 +32,16 @@
       "link": "https://github.com/Shreyav29/Portfolio_Optimization"
     },
     {
-      "title": "SPX_Futures_Roll_Strategy",
+      "title": "SPX Futures Roll Strategy",
       "summary": "The Project aims to design the optimal monthly roll strategy for SPX futures such that we have minimum roll cost. I predict the roll cost that can occur over a 1yr rolling basis to find if the futures are costlier than holding a stock.",
       "tech": ["Tableau", "SQL"],
       "link": "https://github.com/Shreyav29/SPX_Futures_Roll_Strategy"
+    }
+    ,
+    {
+      "title": "Arima Model Stock Price Prediction",
+      "tech": ["Tableau", "SQL"],
+      "link": "https://github.com/Shreyav29/66DaysOfData_Shreya_Vontela/blob/main/Day_1_ARIMA_Model/Arima_stock_price_prediction.ipynb"
     }
   ]
 }

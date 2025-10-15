@@ -211,85 +211,119 @@ footer {
   }
 }
 
-/* ---------- SIDE ARROW TIMELINE ---------- */
+/* ---------- SIDE ARROW TIMELINE (Refined) ---------- */
 
 .timeline-side {
   position: relative;
   list-style: none;
   margin: 0;
-  padding: 0 0 0 140px;           /* space for the year arrow blocks */
+  padding: 0 0 0 160px; /* more breathing space for arrows */
 }
 
-.timeline-side::before {          /* the vertical spine */
+.timeline-side::before {  /* central vertical line */
   content: "";
   position: absolute;
-  left: 100px;
+  left: 110px;
   top: 0;
   bottom: 0;
-  width: 4px;
-  background: linear-gradient(180deg, #9ae6b4, var(--teal));
-  opacity: 0.6;
+  width: 3px;
+  background: linear-gradient(180deg, #b2f5ea, var(--teal));
+  opacity: 0.5;
   border-radius: 2px;
 }
 
 .timeline-side li {
   position: relative;
-  margin: 28px 0 44px;
+  margin: 50px 0; /* increased vertical spacing */
   opacity: 0;
-  transform: translateY(12px);
-  transition: transform .45s ease, opacity .45s ease;
+  transform: translateY(15px);
+  transition: transform 0.45s ease, opacity 0.45s ease;
 }
-.timeline-side li.in {            /* reveal animation */
+
+.timeline-side li.in {
   opacity: 1;
   transform: none;
 }
 
-.timeline-side .year {            /* left arrow block */
+.timeline-side .year {
   position: absolute;
   left: 0;
-  top: 0;
-  width: 120px;
-  padding: 14px 16px;
-  color: #ffffff;
-  background: var(--teal);
-  font-weight: 800;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.08);
-}
-.timeline-side .year::after {     /* arrow triangle */
-  content: "";
-  position: absolute;
-  right: -16px;
   top: 50%;
   transform: translateY(-50%);
-  border-width: 12px 0 12px 16px;
+  width: 130px;
+  padding: 12px 14px;
+  color: #ffffff;
+  background: var(--teal);
+  font-weight: 700;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.timeline-side .year::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 10px 0 10px 15px;
   border-style: solid;
   border-color: transparent transparent transparent var(--teal);
 }
 
 .timeline-side .item {
-  background: var(--bg-light);
-  padding: 16px 18px;
-  border-radius: var(--radius);
-  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.timeline-side .role { margin: 0 0 4px; color: var(--teal-dark); }
-.timeline-side .company { margin: 0 0 8px; color: #475569; font-weight: 600; }
-.timeline-side .bullets { margin: 0 0 0 1.1rem; }
-.timeline-side .bullets li { margin: 6px 0; }
+.timeline-side .item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
 
-/* Mobile stack */
+.timeline-side .role {
+  margin: 0 0 4px;
+  font-weight: 700;
+  color: var(--teal-dark);
+  font-size: 1.05rem;
+}
+
+.timeline-side .company {
+  margin: 0 0 10px;
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.timeline-side .bullets {
+  margin: 0 0 0 1.1rem;
+  line-height: 1.5;
+}
+.timeline-side .bullets li {
+  margin: 6px 0;
+}
+
+/* Mobile adjustments */
 @media (max-width: 760px) {
-  .timeline-side { padding-left: 0; }
-  .timeline-side::before { left: 16px; }
+  .timeline-side {
+    padding-left: 0;
+  }
+  .timeline-side::before {
+    left: 18px;
+  }
   .timeline-side .year {
     position: static;
     display: inline-block;
-    margin: 0 0 10px 32px;
-    border-radius: 10px;
+    margin: 0 0 10px 30px;
+    transform: none;
   }
-  .timeline-side .year::after { display: none; }
-  .timeline-side .item { margin-left: 32px; }
+  .timeline-side .year::after {
+    display: none;
+  }
+  .timeline-side .item {
+    margin-left: 30px;
+  }
 }

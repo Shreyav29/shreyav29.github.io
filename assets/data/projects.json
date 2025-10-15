@@ -1,39 +1,41 @@
 {
   "projects": [
     {
-      "title": "LLM Attribute Extraction",
-      "summary": "LoRA-tuned Qwen SLM for attribute parsing with JSON schema checks.",
-      "tech": ["PyTorch", "LoRA", "Qwen", "ONNX"],
+      "title": "GeoSpatial Analysis and House Price Prediction model",
+      "summary": "I am using the USA census data and analyze the house price movements and find the top 10 investable zip codes in USA.",
+      "tech": ,
       "link": "https://github.com/shreyav29/attribute-extraction",
       "image": "assets/thumbs/attr-extract.jpg"
     },
     {
-      "title": "Agentic Travel Planner",
-      "summary": "Multi-tool agent plans trips, compares prices, ranks options.",
-      "tech": ["LangChain", "Python", "Agents"],
-      "link": "https://github.com/shreyav29/agent-travel"
+      "title": "Predicting Probability of Default",
+      "summary": "Build a machine learning model to predict the probability of deafult in the next month for lending club's loan portfolio.",
+      "tech": ,
+      "link": "https://github.com/Shreyav29/Probability-Of-Default-Model"
     },
     {
-      "title": "RAG Feature Enrichment",
-      "summary": "FAISS retrieval + generator to enrich features from sparse signals.",
-      "tech": ["FAISS", "Transformers", "PyTorch"]
+      "title": "Trading_Strategy_Using_Satellite_Imagery_Data",
+      "summary": "Is it possible to use Satellite Imagery data to predict the stock price movement of a casino industry stock ?",
+      "tech": 
+      "link": "https://github.com/Shreyav29/Trading_Strategy_Using_Satellite_Imagery_Dataset"
     },
     {
-      "title": "Customer Sentiment Classifier",
-      "summary": "Lightweight text classifier with error analysis and calibration.",
-      "tech": ["TensorFlow", "NLTK", "Pandas"],
-      "link": "https://github.com/shreyav29/sentiment-nlp"
+      "title": "Bitcoin Price Prediction",
+      "summary": "Multivariate Multi Step Time Series modelling using GRU layer and recurrent dropout",
+      "tech": ,
+      "link": "https://github.com/Shreyav29/Bitcoin_Price_Prediction"
     },
     {
-      "title": "Loan Risk Scoring",
-      "summary": "Gradient boosting risk model with monitoring and drift checks.",
-      "tech": ["XGBoost", "scikit-learn", "MLflow"]
+      "title": "Asset Allocation using Convex Portfolio Optimization",
+      "summary": "In this project we study and compare the asset allocation methodology followed through mean variance portfolio optimization (MVO) and Sharpe Ratio optimization by using the PyPortfolioOpt library in python",
+      "tech": 
+      "link": "https://github.com/Shreyav29/Portfolio_Optimization"
     },
     {
-      "title": "Tableau Analytics Gallery",
-      "summary": "Interactive dashboards for growth + ops metrics.",
+      "title": "SPX_Futures_Roll_Strategy",
+      "summary": "The Project aims to design the optimal monthly roll strategy for SPX futures such that we have minimum roll cost. I predict the roll cost that can occur over a 1yr rolling basis to find if the futures are costlier than holding a stock.",
       "tech": ["Tableau", "SQL"],
-      "link": "https://public.tableau.com/…"
+      "link": "https://github.com/Shreyav29/SPX_Futures_Roll_Strategy"
     }
   ]
 }

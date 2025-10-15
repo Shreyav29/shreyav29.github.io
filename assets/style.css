@@ -313,8 +313,7 @@ footer {
   transition: transform .18s ease, box-shadow .18s ease;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  min-height: 190px;
+  gap: 10px
 }
 
 .p-card:hover {

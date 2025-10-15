@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Shreya Vontela</title>
-  <link rel="stylesheet" href="assets/style.css"/> <!-- optional shared CSS -->
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
+  <!-- NAV -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html" class="active">About</a>
@@ -16,16 +18,81 @@
     <a href="resume.html">Resume</a>
   </nav>
 
-  <main style="padding:100px 10% 60px;">
+  <main>
     <h1>About Me</h1>
-    <p>
-      I’m a Principal Data Scientist passionate about building ML, GenAI and Agentic AI systems that
-      blend deep technical modeling with business impact. My background spans analytics, experimentation,
-      and scalable model deployment.
-    </p>
-    <p>
-      I enjoy bridging data science with real-world products — transforming ideas into working AI systems.
-    </p>
+
+    <!-- WHO I AM -->
+    <section class="project-block revealed">
+      <h2>👋 Who I Am</h2>
+      <p>
+        I’m <strong>Shreya Vontela</strong> — a Principal Data Scientist and AI practitioner
+        with a deep passion for transforming data into intelligent, actionable systems.
+        Over the past several years, I’ve designed and deployed end-to-end solutions across
+        machine learning, natural language processing, and, most recently, generative AI.
+      </p>
+      <p>
+        My professional journey has spanned both <strong>technical leadership</strong> and
+        <strong>hands-on modeling</strong>. I enjoy the process of taking ambiguous problems,
+        framing them as data-driven questions, and building real systems that deliver measurable impact.
+      </p>
+      <p>
+        I’m currently exploring the evolving space of <strong>Agentic AI</strong> — creating autonomous
+        systems that can reason, act, and collaborate with humans. Beyond work, I’m endlessly curious
+        about design, creativity, and how technology intersects with everyday decision-making.
+      </p>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="project-block revealed">
+      <h2>💡 What I Do</h2>
+      <p>
+        My core work revolves around designing, training, and deploying machine learning and
+        GenAI systems that power intelligent applications. I enjoy working across the stack —
+        from data exploration and feature design to modeling, inference optimization, and productionization.
+      </p>
+
+      <ul>
+        <li>Develop and fine-tune <strong>large language models</strong> and lightweight SLMs (LoRA, PEFT, Quantization)</li>
+        <li>Architect <strong>Generative AI systems</strong> using RAG, prompt engineering, and multi-tool agents</li>
+        <li>Design <strong>data analytics and experimentation frameworks</strong> for high-impact decisions</li>
+        <li>Collaborate across teams to blend technical excellence with clear business outcomes</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS SNAPSHOT -->
+    <section class="project-block revealed">
+      <h2>🧰 Technical Expertise</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-top: 1rem;">
+        <div><strong>Languages:</strong><br/>Python, SQL, JavaScript</div>
+        <div><strong>ML Frameworks:</strong><br/>PyTorch, TensorFlow, scikit-learn, XGBoost</div>
+        <div><strong>GenAI Stack:</strong><br/>Transformers, LangChain, LoRA, Hydra, ONNX Runtime</div>
+        <div><strong>Data Tools:</strong><br/>Snowflake, Pandas, NumPy, Tableau</div>
+        <div><strong>Dev & Infra:</strong><br/>Git, Docker, Linux, Accelerate</div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="project-block revealed">
+      <h2>🚀 Highlights</h2>
+      <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+        <div style="flex:1; min-width:200px;">
+          <h3 style="color:var(--teal-dark); margin-bottom:0;">10+</h3>
+          <p>Deployed AI & ML Models</p>
+        </div>
+        <div style="flex:1; min-width:200px;">
+          <h3 style="color:var(--teal-dark); margin-bottom:0;">5+</h3>
+          <p>Years in Data Science</p>
+        </div>
+        <div style="flex:1; min-width:200px;">
+          <h3 style="color:var(--teal-dark); margin-bottom:0;">∞</h3>
+          <p>Curiosity for AI & Human Learning</p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    © 2025 Shreya Vontela — Built with ❤️ using GitHub Pages
+  </footer>
 </body>
 </html>

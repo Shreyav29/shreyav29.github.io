@@ -26,75 +26,99 @@
   </footer>
 
   <script>
-    const grid = document.getElementById('projects-grid');
+  function badge(label){
+    const s = document.createElement('span');
+    s.className = 'tech-badge';
+    s.textContent = label;
+    return s;
+  }
+  function card(p){
+    const el = document.createElement('article');
+    el.className = 'p-card';
 
-    function badge(label) {
-      const span = document.createElement('span');
-      span.className = 'tech-badge';
-      span.textContent = label;
-      return span;
+    if (p.image){
+      const img = document.createElement('img');
+      img.src = p.image;
+      img.alt = p.title;
+      img.loading = 'lazy';
+      img.onerror = () => img.remove();
+      el.appendChild(img);
     }
 
-    function card(project) {
-      const el = document.createElement('article');
-      el.className = 'p-card';
+    const h3 = document.createElement('h3'); h3.textContent = p.title; el.appendChild(h3);
 
-      // (optional) thumbnail image if provided in JSON
-      if (project.image) {
-        const img = document.createElement('img');
-        img.src = project.image;
-        img.alt = project.title;
-        img.loading = 'lazy';
-        el.appendChild(img);
-      }
+    const sub = document.createElement('p'); sub.className = 'p-sub';
+    sub.textContent = p.summary || ''; el.appendChild(sub);
 
-      const h3 = document.createElement('h3');
-      h3.textContent = project.title;
-      el.appendChild(h3);
-
-      const p = document.createElement('p');
-      p.className = 'p-sub';
-      p.textContent = project.summary || project.description || '';
-      el.appendChild(p);
-
-      // tech badges
-      if (project.tech && project.tech.length) {
-        const wrap = document.createElement('div');
-        wrap.className = 'tech-wrap';
-        project.tech.forEach(t => wrap.appendChild(badge(t)));
-        el.appendChild(wrap);
-      }
-
-      // links row
-      const links = document.createElement('div');
-      links.className = 'p-links';
-
-      if (project.link) {
-        const a = document.createElement('a');
-        a.href = project.link;
-        a.target = '_blank';
-        a.className = 'link';
-        a.textContent = '🔗 GitHub';
-        links.appendChild(a);
-      }
-      if (project.demo) {
-        const a2 = document.createElement('a');
-        a2.href = project.demo;
-        a2.target = '_blank';
-        a2.className = 'link';
-        a2.textContent = '◷ Demo';
-        links.appendChild(a2);
-      }
-
-      el.appendChild(links);
-      return el;
+    if (p.tech?.length){
+      const wrap = document.createElement('div'); wrap.className = 'tech-wrap';
+      p.tech.forEach(t => wrap.appendChild(badge(t)));
+      el.appendChild(wrap);
     }
 
-    fetch('assets/data/projects.json')
-      .then(r => r.json())
-      .then(data => {
-        (data.projects || []).forEach(p => grid.appendChild(card(p)));
+    const links = document.createElement('div'); links.className = 'p-links';
+    if (p.link){ const a = document.createElement('a'); a.href = p.link; a.target='_blank'; a.className='link'; a.textContent='🔗 GitHub'; links.appendChild(a); }
+    if (p.demo){ const b = document.createElement('a'); b.href = p.demo; b.target='_blank'; b.className='link'; b.textContent='◷ Demo'; links.appendChild(b); }
+    el.appendChild(links);
+
+    return el;
+  }
+  function section(title, projects){
+    const sec = document.createElement('section');
+    sec.className = 'proj-section';
+
+    const h2 = document.createElement('h2');
+    h2.className = 'proj-heading';
+    h2.textContent = title;
+    sec.appendChild(h2);
+
+    const grid = document.createElement('div');
+    grid.className = 'projects-grid';
+    projects.forEach(p => grid.appendChild(card(p)));
+    sec.appendChild(grid);
+
+    return sec;
+  }
+
+  const root = document.getElementById('projects-grid');
+
+  fetch('assets/data/projects.json')
+    .then(r => {
+      if (!r.ok) throw new Error('Projects JSON not found: ' + r.status);
+      return r.json();
+    })
+    .then(data => {
+      const list = data.projects || [];
+
+      // group by category
+      const groups = {};
+      list.forEach(p => {
+        const key = p.category || 'Other';
+        (groups[key] ||= []).push(p);
       });
-  </script>
+
+      // order sections
+      const order = ['Gen AI','Agentic AI','ML Modeling','NLP','Quant Finance','Analytics / BI','Other'];
+      const keys = [...Object.keys(groups)].sort((a,b) => {
+        const ia = order.indexOf(a), ib = order.indexOf(b);
+        if (ia === -1 && ib === -1) return a.localeCompare(b);
+        if (ia === -1) return 1;
+        if (ib === -1) return -1;
+        return ia - ib;
+      });
+
+      // clear root and remove its grid class (since it will contain multiple sections)
+      root.innerHTML = '';
+      root.classList.remove('projects-grid');
+
+      keys.forEach(k => root.appendChild(section(k, groups[k])));
+    })
+    .catch(err => {
+      console.error('Projects load failed:', err);
+      root.innerHTML = '<p style="color:#b91c1c">Failed to load projects.</p>';
+    });
+</script>
+
+
 </body>
 </html>

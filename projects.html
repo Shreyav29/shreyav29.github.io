@@ -98,7 +98,7 @@
       });
 
       // order sections
-      const order = ['Gen AI','Agentic AI','ML Modeling','NLP','Quant Finance','Analytics / BI','Other'];
+      const order = ['Gen AI','Agentic AI','ML Modeling','NLP','Quant Finance','Time Series', 'Data Analysis and Tableau','Blog Posts', 'Algorithms Implementation in Python', 'Other' ];
       const keys = [...Object.keys(groups)].sort((a,b) => {
         const ia = order.indexOf(a), ib = order.indexOf(b);
         if (ia === -1 && ib === -1) return a.localeCompare(b);

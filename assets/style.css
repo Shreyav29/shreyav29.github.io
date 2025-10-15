@@ -271,7 +271,7 @@ footer {
 
 /* Mobile stack */
 @media (max-width:760px){
-  .timeline-side::before{ left:18px; }
+  .timeline-side::before{ left:120px; }
   .timeline-side li{ padding-left:0; margin:36px 0; }
   .timeline-side .year{
     position:static; display:inline-block; margin:0 0 10px 32px; transform:none;

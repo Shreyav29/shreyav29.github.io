@@ -210,3 +210,86 @@ footer {
     font-size: 2rem;
   }
 }
+
+/* ---------- CAREER TIMELINE ---------- */
+
+.timeline {
+  position: relative;
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--teal);
+  opacity: 0.3;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 50px;
+}
+
+.timeline-item .dot {
+  position: absolute;
+  left: 11px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: var(--teal);
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px var(--teal);
+}
+
+.timeline-item .content h3 {
+  margin: 0;
+  color: var(--teal-dark);
+  font-size: 1.1rem;
+}
+
+.timeline-item .content p {
+  margin: 0.2rem 0 0;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+@media (min-width: 700px) {
+  .timeline {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .timeline::before {
+    left: 0;
+    top: auto;
+    bottom: auto;
+    width: 100%;
+    height: 2px;
+  }
+
+  .timeline-item {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .timeline-item .dot {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+  }
+}
+
+

@@ -15,6 +15,13 @@
       "link": "https://github.com/Shreyav29/Probability-Of-Default-Model",
       "category": "ML Modeling"
     },
+
+    {
+      "title": "Endoscopic Data Classification",
+      "summary": "YOLO Model to classify and name organs using endoscopic data",
+      "tech": ["XGBoost", "scikit-learn"],
+      "category": "ML Modeling"
+    },
     {
       "title": "Trading Strategy Using Satellite Imagery Data",
       "summary": "Use satellite imagery features to predict stock moves in the casino industry.",

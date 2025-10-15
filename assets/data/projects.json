@@ -20,14 +20,14 @@
       "summary": "Use satellite imagery features to predict stock moves in the casino industry.",
       "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/Shreyav29/Trading_Strategy_Using_Satellite_Imagery_Dataset",
-      "category": "ML Modeling"
+      "category": "Time Series"
     },
     {
       "title": "Bitcoin Price Prediction",
       "summary": "Multivariate multi-step time-series with GRU and recurrent dropout.",
       "tech": ["GRU", "TensorFlow"],
       "link": "https://github.com/Shreyav29/Bitcoin_Price_Prediction",
-      "category": "ML Modeling"
+      "category": "Time Series"
     },
 
     {
@@ -35,21 +35,70 @@
       "summary": "Compare MVO and Sharpe-ratio optimization using PyPortfolioOpt.",
       "tech": ["PyPortfolioOpt", "Python"],
       "link": "https://github.com/Shreyav29/Portfolio_Optimization",
-      "category": "Quant Finance"
+      "category": "Time Series"
     },
     {
       "title": "SPX Futures Roll Strategy",
       "summary": "Design an optimal monthly futures roll strategy to minimize roll cost over a 1-year horizon.",
       "tech": ["Python", "Pandas"],
       "link": "https://github.com/Shreyav29/SPX_Futures_Roll_Strategy",
-      "category": "Quant Finance"
+      "category": "Time Series"
     },
     {
       "title": "ARIMA Model — Stock Price Prediction",
       "summary": "Classical ARIMA forecasting with diagnostics and evaluation.",
       "tech": ["ARIMA", "statsmodels"],
       "link": "https://github.com/Shreyav29/66DaysOfData_Shreya_Vontela/blob/main/Day_1_ARIMA_Model/Arima_stock_price_prediction.ipynb",
-      "category": "Quant Finance"
+      "category": "Time Series"
     }
+
+,
+    {
+      "title": "Coin Toss Problem",
+      "link": "https://github.com/Shreyav29/66DaysOfData_Shreya_Vontela/blob/main/Day_9_Polynomial_Regression_Using_GD/Quadratic_Regression_Using_Gradient_Descent.ipynb",
+      "category": "Algorithms Implementation in Python"
+    }
+
+,
+    {
+      "title": "Quadratic Regression Using Gradient Descent",
+      "link": "https://github.com/Shreyav29/66DaysOfData_Shreya_Vontela/blob/main/Day_9_Polynomial_Regression_Using_GD/Quadratic_Regression_Using_Gradient_Descent.ipynb",
+      "category": "Algorithms Implementation in Python"
+    }
+,
+    {
+      "title": "Linear Regression from Scratch",
+      "link": "https://github.com/Shreyav29/Linear_Regression_from_scratch/blob/main/Linear_Regression.ipynb",
+      "category": "Algorithms Implementation in Python"
+    }
+
+,
+    {
+      "title": "Logistic Regression from Scratch",
+      "link": "https://github.com/Shreyav29/LogisticRegressionFromScratch",
+      "category": "Algorithms Implementation in Python"
+    }
+
+,
+    {
+      "title": "K-Nearest Neighbour algorithm from scratch",
+      "link": "https://github.com/Shreyav29/KNNRegression",
+      "category": "Algorithms Implementation in Python"
+    }
+
+,
+    {
+      "title": "Asset Allocation using Convex Portfolio Optimization",
+      "link": "https://medium.com/where-quant-meets-data-science/asset-allocation-using-convex-portfolio-optimization-f47398d4d613",
+      "category": "Blog Posts"
+    }
+,
+    {
+      "title": "K-Nearest Neighbour algorithm from scratch",
+      "link": "https://medium.com/where-quant-meets-data-science/building-k-nearest-neighbour-algorithm-from-scratch-bd0c5df13192",
+      "category": "Blog Posts"
+    }
+
+    
   ]
 }

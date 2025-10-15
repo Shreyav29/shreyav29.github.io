@@ -2,46 +2,54 @@
   "projects": [
     {
       "title": "GeoSpatial Analysis and House Price Prediction model",
-      "summary": "I am using the USA census data and analyze the house price movements and find the top 10 investable zip codes in USA.",
-      "tech": ["XGBoost", "scikit-learn"] ,
+      "summary": "Use US Census data to analyze house price movements and find the top 10 investable ZIP codes.",
+      "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/shreyav29/attribute-extraction",
-      "image": "assets/thumbs/attr-extract.jpg"
+      "image": "assets/thumbs/attr-extract.jpg",
+      "category": "ML Modeling"
     },
     {
       "title": "Predicting Probability of Default",
-      "summary": "Build a machine learning model to predict the probability of deafult in the next month for lending club's loan portfolio.",
+      "summary": "Machine learning model to predict probability of default next month for LendingClub’s portfolio.",
       "tech": ["XGBoost", "scikit-learn"],
-      "link": "https://github.com/Shreyav29/Probability-Of-Default-Model"
+      "link": "https://github.com/Shreyav29/Probability-Of-Default-Model",
+      "category": "ML Modeling"
     },
     {
       "title": "Trading Strategy Using Satellite Imagery Data",
-      "summary": "Is it possible to use Satellite Imagery data to predict the stock price movement of a casino industry stock ?",
+      "summary": "Use satellite imagery features to predict stock moves in the casino industry.",
       "tech": ["XGBoost", "scikit-learn"],
-      "link": "https://github.com/Shreyav29/Trading_Strategy_Using_Satellite_Imagery_Dataset"
+      "link": "https://github.com/Shreyav29/Trading_Strategy_Using_Satellite_Imagery_Dataset",
+      "category": "ML Modeling"
     },
     {
       "title": "Bitcoin Price Prediction",
-      "summary": "Multivariate Multi Step Time Series modelling using GRU layer and recurrent dropout",
-      "tech": ["XGBoost", "scikit-learn"],
-      "link": "https://github.com/Shreyav29/Bitcoin_Price_Prediction"
+      "summary": "Multivariate multi-step time-series with GRU and recurrent dropout.",
+      "tech": ["GRU", "TensorFlow"],
+      "link": "https://github.com/Shreyav29/Bitcoin_Price_Prediction",
+      "category": "ML Modeling"
     },
+
     {
       "title": "Asset Allocation using Convex Portfolio Optimization",
-      "summary": "In this project we study and compare the asset allocation methodology followed through mean variance portfolio optimization (MVO) and Sharpe Ratio optimization by using the PyPortfolioOpt library in python",
-      "tech": ["XGBoost", "scikit-learn"],
-      "link": "https://github.com/Shreyav29/Portfolio_Optimization"
+      "summary": "Compare MVO and Sharpe-ratio optimization using PyPortfolioOpt.",
+      "tech": ["PyPortfolioOpt", "Python"],
+      "link": "https://github.com/Shreyav29/Portfolio_Optimization",
+      "category": "Quant Finance"
     },
     {
       "title": "SPX Futures Roll Strategy",
-      "summary": "The Project aims to design the optimal monthly roll strategy for SPX futures such that we have minimum roll cost. I predict the roll cost that can occur over a 1yr rolling basis to find if the futures are costlier than holding a stock.",
-      "tech": ["Tableau", "SQL"],
-      "link": "https://github.com/Shreyav29/SPX_Futures_Roll_Strategy"
-    }
-    ,
+      "summary": "Design an optimal monthly futures roll strategy to minimize roll cost over a 1-year horizon.",
+      "tech": ["Python", "Pandas"],
+      "link": "https://github.com/Shreyav29/SPX_Futures_Roll_Strategy",
+      "category": "Quant Finance"
+    },
     {
-      "title": "Arima Model Stock Price Prediction",
-      "tech": ["Tableau", "SQL"],
-      "link": "https://github.com/Shreyav29/66DaysOfData_Shreya_Vontela/blob/main/Day_1_ARIMA_Model/Arima_stock_price_prediction.ipynb"
+      "title": "ARIMA Model — Stock Price Prediction",
+      "summary": "Classical ARIMA forecasting with diagnostics and evaluation.",
+      "tech": ["ARIMA", "statsmodels"],
+      "link": "https://github.com/Shreyav29/66DaysOfData_Shreya_Vontela/blob/main/Day_1_ARIMA_Model/Arima_stock_price_prediction.ipynb",
+      "category": "Quant Finance"
     }
   ]
 }

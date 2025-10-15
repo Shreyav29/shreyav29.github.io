@@ -52,6 +52,44 @@
       "category": "Time Series"
     }
 
+
+
+
+    
+
+    ,
+    {
+      "title": "Jane Street Market Prediction",
+      "link": "https://github.com/Shreyav29/JaneStreetMarketPrediction_Kaggle",
+      "category": "Data Analysis and Visualization"
+    }
+
+,
+    {
+      "title": "Measuring Data Quality and Prediction Accuracy",
+      "link": "https://github.com/Shreyav29/Measuring_Data_Quality_and_Prediction_Accuracy/blob/main/Code.ipynb",
+      "category": "Data Analysis and Visualization"
+    }
+
+    ,
+    {
+      "title": "Bitcoin Web Scraping",
+      "link": "https://github.com/Shreyav29/WebScrapingBitcoin.com",
+      "category": "Data Analysis and Visualization"
+    }
+      ,
+    {
+      "title": "Regex",
+      "link": "https://github.com/Shreyav29/Natural_Language_Processing/blob/main/Regex/Regex_in_finance.ipynb",
+      "category": "Data Analysis and Visualization"
+    }
+    
+
+
+
+
+
+    
 ,
     {
       "title": "Coin Toss Problem",

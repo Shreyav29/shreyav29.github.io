@@ -139,14 +139,13 @@ a.link:hover {
 .proj-section { margin-top: 28px; }
 .proj-heading {
   margin: 16px 0 12px;
-  color: #0f766e;               /* teal with a bit more saturation */
-  font-size: 1.5rem;            /* slightly larger */
+  color: #000;                /* pure black text */
+  font-size: 1.5rem;          /* a bit larger */
   font-weight: 700;
-  letter-spacing: 0.5px;
-  border-left: 6px solid #0d9488;
-  padding-left: 14px;
-  text-transform: uppercase;    /* optional: makes it look section-like */
+  border-left: 5px solid #000; /* black accent line */
+  padding-left: 12px;
 }
+
 
 
 /* ---------- HERO SECTION ---------- */

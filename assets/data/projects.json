@@ -1,48 +1,39 @@
 {
   "projects": [
     {
-      "title": "LLM Attribute Extraction (Capstone)",
-      "description": "Built a LoRA-fine-tuned Qwen-0.5B model to extract structured product attributes from noisy ad text. Designed JSON schema validation, evaluation pipeline, and optimized inference with ONNX Runtime.",
-      "highlights": [
-        "Fine-tuned Qwen-0.5B using LoRA",
-        "Schema validation with Pydantic",
-        "Evaluation harness with precision/recall metrics",
-        "Optimized inference using ONNX Runtime"
-      ],
-      "tech": ["PyTorch", "LoRA", "Hydra", "Qwen", "ONNX Runtime"],
-      "link": "https://github.com/shreyav29/attribute-extraction"
+      "title": "LLM Attribute Extraction",
+      "summary": "LoRA-tuned Qwen SLM for attribute parsing with JSON schema checks.",
+      "tech": ["PyTorch", "LoRA", "Qwen", "ONNX"],
+      "link": "https://github.com/shreyav29/attribute-extraction",
+      "image": "assets/thumbs/attr-extract.jpg"
     },
     {
-      "title": "Agentic AI Travel Planner",
-      "description": "Developed an autonomous multi-tool agent that retrieves, compares, and ranks travel options using LLM reasoning, LangChain, and n8n automation.",
-      "highlights": [
-        "Implemented multi-step tool orchestration",
-        "Dynamic itinerary generation via LLM planning",
-        "Price comparison scoring across APIs"
-      ],
-      "tech": ["LangChain", "Python", "n8n", "LLM Tools"],
+      "title": "Agentic Travel Planner",
+      "summary": "Multi-tool agent plans trips, compares prices, ranks options.",
+      "tech": ["LangChain", "Python", "Agents"],
       "link": "https://github.com/shreyav29/agent-travel"
     },
     {
-      "title": "RAG for Feature Enrichment",
-      "description": "Designed a Retrieval-Augmented Generation system to infer rich features from offline RL trajectories given limited online observations.",
-      "highlights": [
-        "Built FAISS-based retrieval of state embeddings",
-        "Trained generative mapping model for feature recovery",
-        "Validated on HalfCheetah and TextWorld environments"
-      ],
-      "tech": ["FAISS", "Transformers", "PyTorch", "RL"],
-      "link": ""
+      "title": "RAG Feature Enrichment",
+      "summary": "FAISS retrieval + generator to enrich features from sparse signals.",
+      "tech": ["FAISS", "Transformers", "PyTorch"]
     },
     {
-      "title": "Customer Sentiment Classifier (NLP)",
-      "description": "Fine-tuned BiLSTM sentiment classifier on IMDB dataset with text cleaning, tokenization, and error analysis.",
-      "highlights": [
-        "Achieved 90% accuracy on IMDB benchmark",
-        "Performed model calibration and error review"
-      ],
+      "title": "Customer Sentiment Classifier",
+      "summary": "Lightweight text classifier with error analysis and calibration.",
       "tech": ["TensorFlow", "NLTK", "Pandas"],
       "link": "https://github.com/shreyav29/sentiment-nlp"
+    },
+    {
+      "title": "Loan Risk Scoring",
+      "summary": "Gradient boosting risk model with monitoring and drift checks.",
+      "tech": ["XGBoost", "scikit-learn", "MLflow"]
+    },
+    {
+      "title": "Tableau Analytics Gallery",
+      "summary": "Interactive dashboards for growth + ops metrics.",
+      "tech": ["Tableau", "SQL"],
+      "link": "https://public.tableau.com/…"
     }
   ]
 }

@@ -135,16 +135,12 @@ a.link:hover {
 }
 
 
-/* Category section headers */
-.proj-section {
-  margin-top: 32px;
-}
-
+/* Category sections on Projects page */
+.proj-section { margin-top: 28px; }
 .proj-heading {
-  margin: 0 0 14px;
-  font-size: 1.25rem;
-  font-weight: 700;
+  margin: 10px 0 8px;
   color: var(--teal-dark);
+  font-size: 1.2rem;
   border-left: 5px solid var(--teal);
   padding-left: 10px;
 }

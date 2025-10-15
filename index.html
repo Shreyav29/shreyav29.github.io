@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shreya Vontela | Data Scientist</title>
-   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
   <!-- NAV -->
   <nav>
-    <a href="#home" id="link-home">Home</a>
+    <a href="index.html" id="link-home" class="active">Home</a>
     <a href="about.html" id="link-about">About</a>
     <a href="projects.html" id="link-projects">Projects</a>
     <a href="experience.html" id="link-experience">Experience</a>
@@ -30,39 +30,8 @@
     </div>
   </section>
 
-
-
-  <!-- Tiny JS: reveal-on-scroll + active-nav -->
-  <script>
-    // Reveal sections/cards when entering viewport
-    const revealTargets = document.querySelectorAll('.section-reveal, .card');
-    const revObs = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('revealed'); }
-      });
-    }, { threshold: 0.15 });
-    revealTargets.forEach(el => revObs.observe(el));
-
-    // Active nav highlight based on section in view
-    const sections = document.querySelectorAll('section[id]');
-    const links = {
-      home: document.getElementById('link-home'),
-      about: document.getElementById('link-about'),
-      projects: document.getElementById('link-projects'),
-      experience: document.getElementById('link-experience'),
-      contact: document.getElementById('link-contact'),
-      resume: document.getElementById('link-resume'),
-    };
-    const navObs = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        const id = e.target.id;
-        if (e.isIntersecting) {
-          Object.values(links).forEach(l => l.classList.remove('active'));
-          if (links[id]) links[id].classList.add('active');
-        }
-      });
-    }, { rootMargin: "-40% 0px -55% 0px", threshold: 0.01 });
-    sections.forEach(s => navObs.observe(s));
-  </script>
+  <footer>
+    © 2025 Shreya Vontela — Built with ❤️ using GitHub Pages
+  </footer>
 </body>
 </html>

@@ -223,7 +223,7 @@ footer {
 .timeline-side::before{                /* vertical spine */
   content:"";
   position:absolute;
-  left:140px;                          /* sits in the gutter */
+  left:120px;                          /* sits in the gutter */
   top:0; bottom:0;
   width:3px;
   background:linear-gradient(180deg,#b2f5ea,var(--teal));
@@ -232,7 +232,7 @@ footer {
 
 .timeline-side li{
   position:relative;
-  padding-left:180px;                  /* create the gutter per item */
+  padding-left:150px;                  /* create the gutter per item */
   margin:48px 0;                       /* vertical spacing */
   opacity:0; transform:translateY(12px);
   transition:transform .45s ease, opacity .45s ease;
@@ -271,7 +271,7 @@ footer {
 
 /* Mobile stack */
 @media (max-width:760px){
-  .timeline-side::before{ left:120px; }
+  .timeline-side::before{ left:18px; }
   .timeline-side li{ padding-left:0; margin:36px 0; }
   .timeline-side .year{
     position:static; display:inline-block; margin:0 0 10px 32px; transform:none;

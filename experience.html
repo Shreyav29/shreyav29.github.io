@@ -21,135 +21,115 @@
   <main>
     <h1>Experience</h1>
 
-    <!-- TIMELINE AT TOP -->
-    <section class="project-block revealed timeline-wrap" id="timeline">
-      <h2>📈 Career Timeline</h2>
-
-      <div class="timeline timeline--enhanced">
-        <a class="timeline-item" href="#exp-discover">
-          <span class="dot"></span>
-          <span class="label">Discover</span>
-          <span class="date">2023–2024</span>
-        </a>
-        <a class="timeline-item" href="#exp-aspen">
-          <span class="dot"></span>
-          <span class="label">Aspen Capital</span>
-          <span class="date">2022–2023</span>
-        </a>
-        <a class="timeline-item" href="#exp-pennymac">
-          <span class="dot"></span>
-          <span class="label">PennyMac</span>
-          <span class="date">2021–2022</span>
-        </a>
-        <a class="timeline-item" href="#exp-calpers">
-          <span class="dot"></span>
-          <span class="label">CalPERS</span>
-          <span class="date">2020</span>
-        </a>
-        <a class="timeline-item" href="#exp-jpm">
-          <span class="dot"></span>
-          <span class="label">JPMorgan</span>
-          <span class="date">2019–2020</span>
-        </a>
-        <a class="timeline-item" href="#exp-gs">
-          <span class="dot"></span>
-          <span class="label">Goldman Sachs</span>
-          <span class="date">2018</span>
-        </a>
-        <a class="timeline-item" href="#exp-baml">
-          <span class="dot"></span>
-          <span class="label">BofA Merrill</span>
-          <span class="date">2015–2017</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- WORK EXPERIENCE -->
+    <!-- SIDE ARROW TIMELINE -->
     <section class="project-block revealed">
       <h2>💼 Work Experience</h2>
 
-      <!-- Discover -->
-      <div id="exp-discover" style="margin-bottom: 1.2rem;">
-        <h3>Discover Financial Services — Lead Data Scientist</h3>
-        <p><em>Loan Portfolio Analysis & Monitor Hub · Jan 2023 – May 2024 · WA, USA</em></p>
-        <ul>
-          <li>Analytics lead for General & Specialized Servicing; delivered portfolio analysis dashboards in Tableau.</li>
-          <li>Built the <strong>Monitor Hub</strong>—analytics controls to detect fail points at granular and enterprise levels; improved risk mitigation and operational efficiency.</li>
-          <li>Authored monthly delinquency & loss-mitigation reporting aligned to regulatory standards.</li>
-          <li>Led data stewardship roadmaps and vendor integrations; liaison with Dovenmuehle Mortgage Inc. & WGS.</li>
-        </ul>
-      </div>
+      <ul class="timeline-side">
+        <!-- Discover -->
+        <li>
+          <div class="year">2023–2024</div>
+          <div class="item">
+            <h3 class="role">Lead Data Scientist</h3>
+            <div class="company">Discover Financial Services · WA, USA</div>
+            <ul class="bullets">
+              <li>Analytics lead for General & Specialized Servicing; delivered in-depth portfolio analysis in Tableau.</li>
+              <li>Built the <strong>Monitor Hub</strong> — analytical controls to detect fail points at granular and enterprise levels, improving risk mitigation and operational efficiency.</li>
+              <li>Authored monthly delinquency & loss-mitigation reporting aligned to regulatory standards.</li>
+              <li>Led data stewardship roadmaps; acted as analytics liaison with vendors (Dovenmuehle Mortgage Inc., WGS).</li>
+            </ul>
+          </div>
+        </li>
 
-      <!-- Aspen -->
-      <div id="exp-aspen" style="margin-bottom: 1.2rem;">
-        <h3>Aspen Capital — Data Scientist</h3>
-        <p><em>Jun 2022 – Jan 2023 · OR, USA</em></p>
-        <ul>
-          <li>Designed strategy to offer second mortgages & credit cards to existing borrowers using TransUnion/CoreLogic data.</li>
-          <li>Modeled default probabilities and optimized lending rate strategies.</li>
-        </ul>
-      </div>
+        <!-- Aspen -->
+        <li>
+          <div class="year">2022–2023</div>
+          <div class="item">
+            <h3 class="role">Data Scientist</h3>
+            <div class="company">Aspen Capital · OR, USA</div>
+            <ul class="bullets">
+              <li>Designed a strategy to offer second mortgages and credit cards to existing borrowers using TransUnion & CoreLogic datasets.</li>
+              <li>Modeled default probabilities and optimized lending rates using credit & behavioral attributes.</li>
+            </ul>
+          </div>
+        </li>
 
-      <!-- PennyMac -->
-      <div id="exp-pennymac" style="margin-bottom: 1.2rem;">
-        <h3>PennyMac — VP of Data Science</h3>
-        <p><em>May 2021 – May 2022 · CA, USA</em></p>
-        <ul>
-          <li>Built end-to-end <strong>Loan Disposition</strong> LightGBM models predicting six outcomes over 24 months; drove ≈$25M revenue in GNMA EBO space.</li>
-          <li>Developed <strong>Prepay/Default</strong> neural network on ~1TB data to forecast conditional prepayment & delinquency probabilities.</li>
-          <li>Extensive EDA on macroeconomic/loan drivers (e.g., unemployment, hurricanes via Moody’s) revealing nonlinear effects.</li>
-        </ul>
-      </div>
+        <!-- PennyMac -->
+        <li>
+          <div class="year">2021–2022</div>
+          <div class="item">
+            <h3 class="role">VP of Data Science</h3>
+            <div class="company">PennyMac · CA, USA</div>
+            <ul class="bullets">
+              <li>Built end-to-end <strong>Loan Disposition</strong> LightGBM models (6 outcomes, 24-month horizon) → ≈$25M revenue in GNMA EBO space.</li>
+              <li>Developed <strong>Prepay/Default</strong> neural network on ~1 TB data to forecast conditional prepayment & delinquency probabilities.</li>
+              <li>Extensive EDA on macro & loan drivers (e.g., unemployment, hurricanes via Moody’s) showing nonlinear effects.</li>
+            </ul>
+          </div>
+        </li>
 
-      <!-- CalPERS -->
-      <div id="exp-calpers" style="margin-bottom: 1.2rem;">
-        <h3>CalPERS — Investment Associate Intern</h3>
-        <p><em>Sep 2020 – Nov 2020 · CA, USA</em></p>
-        <ul>
-          <li>Linear-programming model to minimize index future roll cost.</li>
-          <li>Estimated incremental financing costs under stress by comparing collateral REPO vs. OIS rates.</li>
-        </ul>
-      </div>
+        <!-- CalPERS -->
+        <li>
+          <div class="year">2020</div>
+          <div class="item">
+            <h3 class="role">Investment Associate Intern</h3>
+            <div class="company">CalPERS · CA, USA</div>
+            <ul class="bullets">
+              <li>Linear programming model to minimize index future roll cost.</li>
+              <li>Estimated incremental financing costs for stressed liquidity portfolios (collateral REPO vs OIS).</li>
+            </ul>
+          </div>
+        </li>
 
-      <!-- JPMorgan -->
-      <div id="exp-jpm" style="margin-bottom: 1.2rem;">
-        <h3>JP Morgan Chase & Co — Quantitative Research Associate</h3>
-        <p><em>Apr 2019 – Mar 2020</em></p>
-        <ul>
-          <li>LGD modeler for Wholesale Credit Loss Forecasting team.</li>
-          <li>Python log-linear model to estimate discount factors for Economic LGD prediction.</li>
-          <li>Sensitivity analysis to macro variables & recovery rates; impact studies in Pandas/SciPy/NumPy/Matplotlib.</li>
-          <li>Saved ~$9M capital via R-based NCO prediction model on Linux.</li>
-          <li>Re-engineered LGD data processing to remove redundancy and improve efficiency.</li>
-        </ul>
-      </div>
+        <!-- JPMorgan -->
+        <li>
+          <div class="year">2019–2020</div>
+          <div class="item">
+            <h3 class="role">Quantitative Research Associate</h3>
+            <div class="company">JP Morgan Chase & Co</div>
+            <ul class="bullets">
+              <li>LGD modeler for Wholesale Credit Loss Forecasting team.</li>
+              <li>Python log-linear model to estimate discount factors for Economic LGD prediction.</li>
+              <li>Sensitivity analyses to macro variables & recovery rates; impact studies in Pandas/SciPy/NumPy/Matplotlib.</li>
+              <li>Saved ~$9M capital via R-based NCO prediction model deployed on Linux.</li>
+              <li>Re-engineered LGD data processing to remove redundancy and improve efficiency.</li>
+            </ul>
+          </div>
+        </li>
 
-      <!-- Goldman Sachs -->
-      <div id="exp-gs" style="margin-bottom: 1.2rem;">
-        <h3>Goldman Sachs — Asset Management Intern</h3>
-        <p><em>Apr 2018 – Jun 2018</em></p>
-        <ul>
-          <li>Advised $2B AUM pension client in multi-asset strategy team.</li>
-          <li>Optimized 20+ portfolios maximizing information ratio; incorporated leverage & vol selling.</li>
-          <li>Built Excel tool to spot opportunities across 26 indices from earnings/sales.</li>
-          <li>Benchmarked ETFs to define dynamic cap-weighted REITs benchmark.</li>
-        </ul>
-      </div>
+        <!-- Goldman Sachs -->
+        <li>
+          <div class="year">2018</div>
+          <div class="item">
+            <h3 class="role">Asset Management Intern</h3>
+            <div class="company">Goldman Sachs</div>
+            <ul class="bullets">
+              <li>Advised a $2B AUM pension client in a multi-asset strategy team.</li>
+              <li>Optimized 20+ portfolios maximizing information ratio with leverage & vol selling.</li>
+              <li>Built an Excel tool to spot opportunities across 26 indices using earnings/sales data.</li>
+              <li>Benchmarked ETFs to define a dynamic cap-weighted REITs index.</li>
+            </ul>
+          </div>
+        </li>
 
-      <!-- BAML -->
-      <div id="exp-baml" style="margin-bottom: 1.2rem;">
-        <h3>Bank of America Merrill Lynch — Senior Associate (Python Developer)</h3>
-        <p><em>Jul 2015 – Jun 2017</em></p>
-        <ul>
-          <li>Python orchestrator on Quartz framework for derivative trade data processing.</li>
-          <li>Real-time settlement & reconciliation for global Equity & Forex derivatives.</li>
-          <li>Integrated money-market settlement tools across subsidiaries → process speed +150%.</li>
-          <li>Automated EOD reconciliation of nostro accounts → saved 300+ hours/month.</li>
-        </ul>
-      </div>
+        <!-- BAML -->
+        <li>
+          <div class="year">2015–2017</div>
+          <div class="item">
+            <h3 class="role">Senior Associate (Python Developer)</h3>
+            <div class="company">Bank of America Merrill Lynch</div>
+            <ul class="bullets">
+              <li>Python orchestrator on Quartz framework for derivative trade data processing.</li>
+              <li>Real-time settlement & reconciliation for global Equity & Forex derivatives.</li>
+              <li>Integrated money-market settlement tools across subsidiaries → process speed +150%.</li>
+              <li>Automated EOD reconciliation of nostro accounts → saved 300+ hours/month.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </section>
 
-    <!-- EDUCATION -->
+    <!-- EDUCATION (unchanged) -->
     <section class="project-block revealed">
       <h2>🎓 Education</h2>
 
@@ -181,5 +161,14 @@
   <footer>
     © 2025 Shreya Vontela — Built with ❤️ using GitHub Pages
   </footer>
+
+  <!-- Tiny JS: fade-in items as they enter viewport -->
+  <script>
+    const items = document.querySelectorAll('.timeline-side li');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.12 });
+    items.forEach(li => io.observe(li));
+  </script>
 </body>
 </html>

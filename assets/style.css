@@ -134,6 +134,22 @@ a.link:hover {
   text-decoration: underline;
 }
 
+
+/* Category section headers */
+.proj-section {
+  margin-top: 32px;
+}
+
+.proj-heading {
+  margin: 0 0 14px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--teal-dark);
+  border-left: 5px solid var(--teal);
+  padding-left: 10px;
+}
+
+
 /* ---------- HERO SECTION ---------- */
 
 .hero {

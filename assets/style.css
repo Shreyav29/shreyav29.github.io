@@ -280,3 +280,14 @@ footer {
   .timeline-side .item{ margin-left:32px; }
 }
 
+/* ---------- Fix bullet alignment ---------- */
+.timeline-side .bullets {
+  margin: 0;
+  padding-left: 1.1rem;              /* smaller indent */
+  list-style-position: inside;       /* bring bullets closer to text */
+}
+
+.timeline-side .bullets li {
+  margin: 4px 0;                     /* slightly tighter spacing */
+  line-height: 1.45;                 /* cleaner text density */
+}

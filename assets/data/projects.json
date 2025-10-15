@@ -3,32 +3,32 @@
     {
       "title": "GeoSpatial Analysis and House Price Prediction model",
       "summary": "I am using the USA census data and analyze the house price movements and find the top 10 investable zip codes in USA.",
-      "tech": ,
+      "tech": ["XGBoost", "scikit-learn"] ,
       "link": "https://github.com/shreyav29/attribute-extraction",
       "image": "assets/thumbs/attr-extract.jpg"
     },
     {
       "title": "Predicting Probability of Default",
       "summary": "Build a machine learning model to predict the probability of deafult in the next month for lending club's loan portfolio.",
-      "tech": ,
+      "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/Shreyav29/Probability-Of-Default-Model"
     },
     {
       "title": "Trading_Strategy_Using_Satellite_Imagery_Data",
       "summary": "Is it possible to use Satellite Imagery data to predict the stock price movement of a casino industry stock ?",
-      "tech": 
+      "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/Shreyav29/Trading_Strategy_Using_Satellite_Imagery_Dataset"
     },
     {
       "title": "Bitcoin Price Prediction",
       "summary": "Multivariate Multi Step Time Series modelling using GRU layer and recurrent dropout",
-      "tech": ,
+      "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/Shreyav29/Bitcoin_Price_Prediction"
     },
     {
       "title": "Asset Allocation using Convex Portfolio Optimization",
       "summary": "In this project we study and compare the asset allocation methodology followed through mean variance portfolio optimization (MVO) and Sharpe Ratio optimization by using the PyPortfolioOpt library in python",
-      "tech": 
+      "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/Shreyav29/Portfolio_Optimization"
     },
     {

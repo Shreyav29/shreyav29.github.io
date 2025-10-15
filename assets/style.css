@@ -280,14 +280,15 @@ footer {
   .timeline-side .item{ margin-left:32px; }
 }
 
-/* ---------- Fix bullet alignment ---------- */
+/* ---------- Bullet alignment fix ---------- */
 .timeline-side .bullets {
-  margin: 0;
-  padding-left: 1.1rem;              /* smaller indent */
-  list-style-position: inside;       /* bring bullets closer to text */
+  margin: 8px 0 0 0;
+  padding-left: 0;              /* remove default indent */
+  list-style-position: inside;  /* makes bullets align with text */
 }
 
 .timeline-side .bullets li {
-  margin: 4px 0;                     /* slightly tighter spacing */
-  line-height: 1.45;                 /* cleaner text density */
+  margin: 5px 0;
+  text-indent: -0.6em;          /* nudge bullet text back slightly */
+  padding-left: 0.6em;          /* keeps bullets vertically aligned with company text */
 }

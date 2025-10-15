@@ -124,6 +124,9 @@
       "category": "Algorithms Implementation in Python"
     }
 
+
+
+    
 ,
     {
       "title": "Asset Allocation using Convex Portfolio Optimization",
@@ -136,7 +139,24 @@
       "link": "https://medium.com/where-quant-meets-data-science/building-k-nearest-neighbour-algorithm-from-scratch-bd0c5df13192",
       "category": "Blog Posts"
     }
-
+,
+    {
+      "title": "NLP: Sentiment Analysis",
+      "link": "https://github.com/Shreyav29/Coursera-Natural-Language-Processing-Specialization/blob/main/C1%20Natural%20Language%20Processing%20with%20Classification%20and%20Vector%20Spaces/Week1/README.md",
+      "category": "Blog Posts"
+    }
+,
+    {
+      "title": "Gradient Descent(Batch GD) , Stochastic Gradient descent and Mini Batch Gradient Descent",
+      "link": "https://github.com/Shreyav29/66DaysOfData_Shreya_Vontela/tree/main/Day_2_Types_Of_Gradient_Descent",
+      "category": "Blog Posts"
+    }
+,
+    {
+      "title": "Hyper parameter tuning (Grid Search , Random Search , Bayesian Optimization)",
+      "link": "https://github.com/Shreyav29/66DaysOfData_Shreya_Vontela/tree/main/Day_4_HyperParameters_Tuning_Methods",
+      "category": "Blog Posts"
+    }
     
   ]
 }

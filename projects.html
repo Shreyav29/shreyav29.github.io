@@ -4,10 +4,9 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects | Shreya Vontela</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <!-- NAV -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -19,67 +18,88 @@
 
   <main>
     <h1>Projects</h1>
-    <div id="projects-container"></div>
+
+    <!-- Intro (optional, short) -->
+    <p style="margin-top:-6px;color:#475569">A few selected projects across ML modeling, GenAI, and analytics.</p>
+
+    <!-- GRID -->
+    <div id="projects-grid" class="projects-grid"></div>
   </main>
 
+  <footer>
+    © 2025 Shreya Vontela — All rights reserved.
+  </footer>
+
   <script>
-    const container = document.getElementById("projects-container");
+    const grid = document.getElementById('projects-grid');
 
-    function createProjectBlock(p) {
-      const block = document.createElement("div");
-      block.className = "project-block";
-
-      const title = document.createElement("h2");
-      title.textContent = p.title;
-
-      const desc = document.createElement("p");
-      desc.className = "desc";
-      desc.textContent = p.description;
-
-      const highlights = document.createElement("ul");
-      (p.highlights || []).forEach(h => {
-        const li = document.createElement("li");
-        li.textContent = h;
-        highlights.appendChild(li);
-      });
-
-      const tech = document.createElement("div");
-      tech.className = "tech";
-      tech.textContent = "Tech Stack: " + (p.tech || []).join(" · ");
-
-      const link = p.link ? document.createElement("a") : null;
-      if (link) {
-        link.href = p.link;
-        link.className = "link";
-        link.target = "_blank";
-        link.textContent = "🔗 View on GitHub";
-      }
-
-      block.appendChild(title);
-      block.appendChild(desc);
-      if (highlights.childNodes.length) block.appendChild(highlights);
-      block.appendChild(tech);
-      if (link) block.appendChild(link);
-
-      return block;
+    function badge(label) {
+      const span = document.createElement('span');
+      span.className = 'tech-badge';
+      span.textContent = label;
+      return span;
     }
 
-    fetch("assets/data/projects.json")
+    function card(project) {
+      const el = document.createElement('article');
+      el.className = 'p-card';
+
+      // (optional) thumbnail image if provided in JSON
+      if (project.image) {
+        const img = document.createElement('img');
+        img.src = project.image;
+        img.alt = project.title;
+        img.loading = 'lazy';
+        el.appendChild(img);
+      }
+
+      const h3 = document.createElement('h3');
+      h3.textContent = project.title;
+      el.appendChild(h3);
+
+      const p = document.createElement('p');
+      p.className = 'p-sub';
+      p.textContent = project.summary || project.description || '';
+      el.appendChild(p);
+
+      // tech badges
+      if (project.tech && project.tech.length) {
+        const wrap = document.createElement('div');
+        wrap.className = 'tech-wrap';
+        project.tech.forEach(t => wrap.appendChild(badge(t)));
+        el.appendChild(wrap);
+      }
+
+      // links row
+      const links = document.createElement('div');
+      links.className = 'p-links';
+
+      if (project.link) {
+        const a = document.createElement('a');
+        a.href = project.link;
+        a.target = '_blank';
+        a.className = 'link';
+        a.textContent = '🔗 GitHub';
+        links.appendChild(a);
+      }
+      if (project.demo) {
+        const a2 = document.createElement('a');
+        a2.href = project.demo;
+        a2.target = '_blank';
+        a2.className = 'link';
+        a2.textContent = '◷ Demo';
+        links.appendChild(a2);
+      }
+
+      el.appendChild(links);
+      return el;
+    }
+
+    fetch('assets/data/projects.json')
       .then(r => r.json())
       .then(data => {
-        (data.projects || []).forEach(p => {
-          const block = createProjectBlock(p);
-          container.appendChild(block);
-          observer.observe(block);
-        });
+        (data.projects || []).forEach(p => grid.appendChild(card(p)));
       });
-
-    // fade-in animation
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add("revealed");
-      });
-    }, { threshold: 0.15 });
   </script>
 </body>
 </html>

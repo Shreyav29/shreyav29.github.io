@@ -7,15 +7,6 @@
      "image": "assets/thumbs/endo.png",
       "category": "ML Modeling"
     },
-    
-    {
-      "title": "GeoSpatial Analysis and House Price Prediction model",
-      "summary": "Use US Census data to analyze house price movements and find the top 10 investable ZIP codes.",
-      "tech": ["XGBoost", "scikit-learn"],
-      "link": "https://github.com/shreyav29/attribute-extraction",
-      "image": "assets/thumbs/geo.png",
-      "category": "ML Modeling"
-    },
     {
       "title": "Predicting Probability of Default",
       "summary": "Machine learning model to predict probability of default next month for LendingClub’s portfolio.",
@@ -24,6 +15,15 @@
       "image": "assets/thumbs/pd.png",
       "category": "ML Modeling"
     },
+    {
+      "title": "GeoSpatial Analysis and House Price Prediction model",
+      "summary": "Use US Census data to analyze house price movements and find the top 10 investable ZIP codes.",
+      "tech": ["XGBoost", "scikit-learn"],
+      "link": "https://github.com/shreyav29/attribute-extraction",
+      "image": "assets/thumbs/geo.png",
+      "category": "ML Modeling"
+    },
+    
 
     
     {

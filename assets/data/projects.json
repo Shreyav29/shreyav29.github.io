@@ -1,11 +1,19 @@
 {
   "projects": [
+   {
+      "title": "AI-Assisted Endoscopic Guidance System",
+      "summary": "YOLO Model to classify and name organs using endoscopic data",
+      "tech": ["XGBoost", "scikit-learn"],
+     "image": "assets/thumbs/endo.jpg",
+      "category": "ML Modeling"
+    },
+    
     {
       "title": "GeoSpatial Analysis and House Price Prediction model",
       "summary": "Use US Census data to analyze house price movements and find the top 10 investable ZIP codes.",
       "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/shreyav29/attribute-extraction",
-      "image": "assets/thumbs/attr-extract.jpg",
+      "image": "assets/thumbs/geo.jpg",
       "category": "ML Modeling"
     },
     {
@@ -13,15 +21,11 @@
       "summary": "Machine learning model to predict probability of default next month for LendingClub’s portfolio.",
       "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/Shreyav29/Probability-Of-Default-Model",
+      "image": "assets/thumbs/pd.jpg",
       "category": "ML Modeling"
     },
 
-    {
-      "title": "Endoscopic Data Classification",
-      "summary": "YOLO Model to classify and name organs using endoscopic data",
-      "tech": ["XGBoost", "scikit-learn"],
-      "category": "ML Modeling"
-    },
+    
     {
       "title": "Trading Strategy Using Satellite Imagery Data",
       "summary": "Use satellite imagery features to predict stock moves in the casino industry.",

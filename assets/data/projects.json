@@ -12,7 +12,7 @@
       "summary": "Machine learning model to predict probability of default next month for LendingClub’s portfolio.",
       "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/Shreyav29/Probability-Of-Default-Model",
-      "image": "assets/thumbs/pd.png",
+      "image": "assets/thumbs/geo.png",
       "category": "ML Modeling"
     },
     {

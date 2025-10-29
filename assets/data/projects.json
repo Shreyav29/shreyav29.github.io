@@ -3,7 +3,7 @@
    {
       "title": "AI-Assisted Endoscopic Guidance System",
       "summary": "YOLO Model to classify and name organs using endoscopic data",
-      "tech": ["XGBoost", "scikit-learn"],
+      "tech": ["YOLO", "ONNX"],
      "image": "assets/thumbs/endo.png",
       "category": "ML Modeling"
     },
@@ -20,7 +20,7 @@
       "summary": "Use US Census data to analyze house price movements and find the top 10 investable ZIP codes.",
       "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/shreyav29/attribute-extraction",
-      "image": "assets/thumbs/geo.png",
+      "image": "assets/thumbs/hpp.png",
       "category": "ML Modeling"
     },
     

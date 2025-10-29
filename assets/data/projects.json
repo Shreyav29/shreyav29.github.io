@@ -4,7 +4,7 @@
       "title": "AI-Assisted Endoscopic Guidance System",
       "summary": "YOLO Model to classify and name organs using endoscopic data",
       "tech": ["XGBoost", "scikit-learn"],
-     "image": "assets/thumbs/endo.jpg",
+     "image": "assets/thumbs/endo.png",
       "category": "ML Modeling"
     },
     
@@ -13,7 +13,7 @@
       "summary": "Use US Census data to analyze house price movements and find the top 10 investable ZIP codes.",
       "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/shreyav29/attribute-extraction",
-      "image": "assets/thumbs/geo.jpg",
+      "image": "assets/thumbs/geo.png",
       "category": "ML Modeling"
     },
     {
@@ -21,7 +21,7 @@
       "summary": "Machine learning model to predict probability of default next month for LendingClub’s portfolio.",
       "tech": ["XGBoost", "scikit-learn"],
       "link": "https://github.com/Shreyav29/Probability-Of-Default-Model",
-      "image": "assets/thumbs/pd.jpg",
+      "image": "assets/thumbs/pd.png",
       "category": "ML Modeling"
     },
 

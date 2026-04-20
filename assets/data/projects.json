@@ -1,9 +1,20 @@
 {
   "projects": [
+
+    
+    {
+      "title": "Multi-Agent Weather Assistant with LangGraph & Gemini",
+      "summary": "This project demonstrates how to build a sophisticated AI agent that classifies queries, fetches real-time weather data, and generates human-friendly responses.",
+      "tech": ["LanGraph", "LLM" ,"NLP],
+      "link": "https://github.com/Shreyav29/Multi-Agent-Weather-Assistant-with-LangGraph",
+      "image": "",
+      "category": "Gen AI & Agentic AI"
+    },
    {
       "title": "AI-Assisted Endoscopic Guidance System",
       "summary": "YOLO Model to classify and name organs using endoscopic data",
       "tech": ["YOLO", "ONNX"],
+     "link": "https://github.com/Shreyav29/AI-Assisted-Endoscopic-Guidance-System",
      "image": "assets/thumbs/endo.png",
       "category": "ML Modeling"
     },

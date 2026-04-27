@@ -1,6 +1,13 @@
 {
   "projects": [
-
+{
+      "title": "GroundedAlpha",
+      "summary": "A stateful, multi-agent research desk that bridges the gap between deterministic financial engineering and agentic AI for high-stakes options trading.",
+      "tech": ["LanGraph", "LLM" ,"Orchestration"],
+      "link": "https://github.com/Shreyav29/GroundedAlpha/tree/master",
+      "image": "",
+      "category": "Gen AI & Agentic AI"
+    },
     
     {
       "title": "Multi-Agent Weather Assistant with LangGraph & Gemini",

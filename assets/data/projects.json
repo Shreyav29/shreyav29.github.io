@@ -5,7 +5,7 @@
       "summary": "A stateful, multi-agent research desk that bridges the gap between deterministic financial engineering and agentic AI for high-stakes options trading.",
       "tech": ["LanGraph", "LLM" ,"Orchestration"],
       "link": "https://github.com/Shreyav29/GroundedAlpha/tree/master",
-      "image": "",
+      "image": "assets/thumbs/Gemini_Generated_Image_nram1xnram1xnram.png",
       "category": "Gen AI & Agentic AI"
     },
     
@@ -14,7 +14,7 @@
       "summary": "This project demonstrates how to build a sophisticated AI agent that classifies queries, fetches real-time weather data, and generates human-friendly responses.",
       "tech": ["LanGraph", "LLM" ,"NLP"],
       "link": "https://github.com/Shreyav29/Multi-Agent-Weather-Assistant-with-LangGraph",
-      "image": "",
+      "image": "assets/thumbs/Screenshot 2026-04-26 173544.png",
       "category": "Gen AI & Agentic AI"
     },
    {

@@ -1,6 +1,14 @@
 {
   "projects": [
 {
+      "title": "Risk Aware Pricing Engine with Closed Loop Feedback Pipeline",
+      "summary": "A closed-loop, probabilistic iBuyer pricing engine using LightGBM quantile regression and a rolling sell-side feedback loop to convert asset valuation uncertainty into dynamic, risk-adjusted acquisition offers.",
+      "tech": ["Quantile Regression", "Calibration"],
+      "link": "https://github.com/Shreyav29/Risk-Aware-Pricing-Engine-with-Closed-Loop-Feedback-Pipeline",
+      "image": "assets/thumbs/OD.png",
+      "category": "ML Modeling"
+    },
+    {
       "title": "GroundedAlpha",
       "summary": "A stateful, multi-agent research desk that bridges the gap between deterministic financial engineering and agentic AI for high-stakes options trading.",
       "tech": ["LanGraph", "LLM" ,"Orchestration"],
